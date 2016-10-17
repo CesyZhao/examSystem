@@ -1,0 +1,26 @@
+.confirmBox{ width: 400px; height: 200px; border-radius: 10px;  background: #ccc; position: absolute; left: 500px; top:200px;
+ z-index: 8; box-shadow: 0 0 5px #000;}
+
+ *{text-align: center;}
+ .addBox{ width: 850px; height: 600px; background: #fff;position: absolute; border-radius: 6px;
+ box-shadow: 0 0 5px #000; display: none; transition: ease-in-out .5s; left:50%; top:-610px; z-index: 6; margin-left:-425px;}
+.addBox.show{ transform: translate(0px,650px); }
+.addBox a{ float:right;}
+ .bg{ width: 100%; height: 700px; z-index: 3; background: #000; opacity: 0.5; float: left; position: absolute;top:0;left: 0;}
+ 
+ 
+ /********btns**********/
+ .btns{ display:inline-block; padding:1px 10px; border:1px solid #ccc; border-radius:3px; background-size:100%;}
+ .btns.ser{ padding:4px 0 4px 22px; border:none;}
+ .btns.addOne{ background:url(../images/icon/icon_l_c.png) no-repeat; }
+ .btns.addMany{ background:url(../images/icon/icon_l_a.png) no-repeat;}
+ 
+ /*********icons*********/
+ 
+ .icon_left{ display:inline-block; width:16px; height:16px;  vertical-align:middle; margin-right:2px;}
+ .icon_left.home{ background:url(../images/icon/icon_basic.png);}
+ .icon_left.paper{ background:url(../images/icon/icon_personnel.png) no-repeat;}
+ .icon_left.exam{ background:url(../images/icon/icon_educational.png) no-repeat;}
+ .icon_ser{ float:right; width:28px; height:27px;}
+ .icon_ser.r{ background:url(../images/icon/icon_r.png); margin-top:-4px; margin-left:-10px;}
+ .icon_close{ display:inline-block;width:10px; height:10px; background:url(../images/icon/ico_del2.png); cursor:pointer;}

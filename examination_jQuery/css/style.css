@@ -1,0 +1,94 @@
+/****居中****/
+.center_box{ width: 1350px; margin: 0 auto; overflow: hidden; z-index: 1; background: url(../images/theme/bg.png); background-size: 100%; }
+/*****头部******/
+.header{ width: 1350px; height: 72px; background: #ccc;  background:url(../images/theme/top.png)  center no-repeat; background-size: 100%;
+position: relative;}
+.header .door{ width: 240px; height: 35px; background: url(../images/theme/sign.png) no-repeat;  float: left; position:absolute; top: 0;
+left: 50%; margin-left:-120px; }
+.header .logo{ width: 245px; height: 60px; background:  url(../images/theme/tk_logo.png); float: left; margin-left:15px; }
+.header .btns{ float: right; margin-right: 20px; border:none; }
+.header .btns li{ float: left; width: 52px; height: 68px; }
+.header .btns a{ width: 100%; height: 100%; display: inline-block; position: relative; }
+.header .btns a span{ position: absolute; bottom: 3px;left: 0px; display: inline-block; width: 100%; }
+.header .btns a.t1{ background: url(../images/icon/desktopicon.png); }
+.header .btns a.t2{ background: url(../images/icon/desktopicon.png) -120px; }
+.header .btns a.t3{ background: url(../images/icon/desktopicon.png) -180px; }
+.left{ width:160px; height: 650px; background: #ccc; float: left; background: url(../images/theme/left.png); padding-top: 10px;
+ margin-left:15px;}
+.total_ul{ }
+li.item{ height: auto; width: 150px; margin:0 auto 5px auto; text-align: center; line-height: 36px;  cursor: pointer;
+position: relative; overflow:hidden;}
+li.item>a{ display:inline-block; width:100%; height:36px; transition: ease 1s; border-radius: 4px; 
+background: url(../images/theme/list_btn_li.png) no-repeat; font-weight:bold; color:#fff;}
+li.item a:hover{  color:#000; background: url(../images/theme/list_btn_li2.png) no-repeat;  background-size: 100%;}
+.sec_ul{display: none; }
+.sec_ul .sec_item{  width:130px; height:25px; line-height:25px; margin:5px auto 0 auto;}
+.sec_ul .sec_item a{ display:inline-block; width:100%; height:100%;background: url(../images/theme/list_ui_li_def.png) repeat-x; background-size: 100%; border-radius:3px; }
+.sec_ul .sec_item a.current{background:url(../images/theme/list_ui_li_act.png) repeat-x; color:#fff; }
+.effect{
+	display: block;
+	border-radius: 100%;
+	position: absolute;
+	background:#125a9a;
+	transform: scale(0);
+}
+.animate-effect{
+	animation: rip 0.4s linear;
+}
+@keyframes rip{
+	100%{
+		opacity: 0;
+		transform: scale(2.5);	
+	}
+}
+
+.right{ width: 1138px; height:700px; float: left;  border:1px solid transparent; border-radius: 5px; background: #fff; padding:10px; }
+.operations{ position: absolute; left:200px; bottom: 20px; }
+
+
+
+/*****全部题目******/
+.top_search{ overflow:hidden;}
+.ser_search{ float:left;}
+.ser_search input{ height:20px;}
+.options{ float:right;}
+.filter_ops{ width:100%; border-bottom:2px solid #999;}
+.filter_ops table{ background:#fffbf2; width:100%; border-collapse:collapse;}
+.filter_ops table tr{ height:36px;}
+.filter_ops table tr td{ border:1px solid #ccc;}
+.filter_ops table tr td div{ text-align:left;}
+.filter_ops table tr td div a{ margin-left:10px; padding:4px 10px; border-radius:3px;}
+.filter_ops table tr td div a.current{ background:#6ca620; color:#fff;}
+.num_show{ text-align:left; padding:5px 0; border-bottom:1px solid #999;}
+.num_show em{ color:red;}
+.num_show .num{ margin-right:10px;}
+.num_show .show a{ color:blue;}
+
+.content{ width:100%; overflow:hidden; border-bottom:1px solid #999;}
+.content_title{ height:36px; background:#f7f7f7; line-height:36px;text-align:left;}
+.content_content{ height:200px; text-align:left; position:relative;}
+.answer_asis{ position:absolute; bottom:30px; text-align:left; display:none;}
+.content_options{ float:right; height:36px;}
+.content_options a{  margin-right:10px; padding:5px 10px;  background:#00b4ff; color:#fff;}
+
+
+
+/************添加*******************/
+.addPage{padding:5px; text-align:left;}
+.add_head{ background:#c3e5ff; height:25px; padding:8px; border-radius:8px;}
+.addPage h1{ float:left;}
+.addPage .icon_close{ float:right;}
+.obj_ops{ text-align:left; margin-top:5px;}
+.obj_content{ text-align:left;}
+textarea{ text-align:left;}
+.aw_left{ float:left; width:30px; height:60px;}
+.aw_left span{ display:block;width:30px; height:35px; background:#9dcdf5; line-height:30px;}
+.radio_content{ text-align:left;}
+.aw_left .radio{ background:#a9d9fd; vertical-align:middle; padding-top:10px; height:25px;}
+.aw_right{ float:left;}
+.answer.C{ clear:left;}
+.check_content{ text-align:left;}
+.easey{ text-align:left;}
+.analysis{ float:left; text-align:left;}
+.save_btn{ float:left; position:absolute; bottom:5px; }
+.save_btn a{ background:#2f83cb; border-radius:3px; margin-right:10px; color:#fff; padding:2px 5px;}

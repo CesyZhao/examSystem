@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta charset=gbk>
+  <title>jQuery UI 对话框（Dialog） - 默认功能</title>
+  <link rel="stylesheet" href="../js/jquery-ui-1.12.0/jquery-ui.min.css">
+  <script type="text/javascript" src="../js/jquery-2.1.4/jquery.js"></script>
+  <script type="text/javascript" src="../js/jquery-ui-1.12.0/jquery-ui.min.js"></script>
+  <style>
+.addBox{ width: 350px; height: 400px; background: #fff;position: absolute; border-radius: 4px;
+ box-shadow: 0 0 5px #000; display: none; transition: ease-in-out .5s; left:500px;  z-index: 6;}
+.addBox.show{ transform: translate(0px,600px); }
+  </style>
+ <script>
+  $(function() {
+    $( ".addBox" ).dialog({
+      height: 240,
+     // modal: true,
+      autoOpen: false,
+      show: {
+        effect: "slide",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+ 
+    $( "#opener" ).click(function() {
+      $( ".addBox" ).dialog( "open" );
+    });
+  });
+  </script>
+</head>
+<body>
+ 
+<div class="addBox" title="添加学生信息">
+  <p>这是一个动画显示的对话框，用于显示信息。对话框窗口可以移动，调整尺寸，默认可通过 'x' 图标关闭。</p>
+</div>
+ 
+<button id="opener">打开对话框</button>
+ 
+ 
+</body>
+</html>
+

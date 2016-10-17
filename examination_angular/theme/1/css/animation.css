@@ -1,0 +1,72 @@
+/* 动画效果
+============================================================================= */
+
+/* 页面离开动画 ----------------------------------------- */
+/* 旋转并且下落 */
+@keyframes rotateFall {
+    0%         { transform: rotateZ(0deg); }
+    20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40%     { transform: rotateZ(17deg); }
+    60%     { transform: rotateZ(16deg); }
+    100%     { transform: translateY(100%) rotateZ(17deg); }
+}
+
+/* 从左侧滑出*/
+@keyframes slideOutRight {
+    to         { transform: translateX(100%); }
+}
+/*从下侧滑出*/
+@keyframes slideOutDown {
+    to         { transform: translateY(100%); }
+}
+
+/* 不停旋转直到消失 */
+@keyframes rotateOut {
+    to         { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+
+/********页面进入动画***********/
+/* 按比例扩大 */
+@keyframes scaleUp {
+    from     { opacity: 0.3;transform: scale(0.3); }
+    to     { opacity: 1;transform: scale(1); }
+}
+/**旋转并放大***/
+@keyframes rotateIn {
+
+    to  { transform: rotateZ(360deg) scale(1,1); opacity: 1; }
+}
+/****先纵向打开再横向铺满****/
+
+@keyframes turnOn {
+    0% {transform: scale(0,0);}
+    20% {transform: scale(0,0.1);}
+    50%{ transform: scale(0.01,1);}
+    100%{ transform: scale(1,1);}
+}
+/* 从右侧滑入 */
+@keyframes slideInRight {
+    from     { transform:translateX(100%); }
+    to         { transform: translateX(0); }
+}
+
+/* 从下侧滑入*/
+@keyframes slideInUp {
+    from     { transform:translateY(100%); }
+    to         { transform: translateY(0); }
+}
+
+
+.ng-enter         { z-index: 8888; }
+.ng-leave         { z-index: 9999; }
+
+/* 每个页面的效果 ------------------------ */
+
+.page-allSubject.ng-enter         {  animation: slideInUp 0.5s ease-in; animation-delay: 0.3s; }
+.page-allSubject.ng-leave         { transform-origin: 0% 0%; animation: slideOutDown 0.5s  ease-in; }
+
+.page-subjectManager.ng-enter{ animation: slideInUp 0.5s ease-in; animation-delay: 0.3s;}
+.page-subjectManager.ng-leave{ animation: slideOutDown 0.5s ease-in;}
+
+.page-addSgSbj.ng-enter{ animation: slideInRight 0.5s ease-in; animation-delay: 0.3s;}
+.page-addSgSbj.ng-leave{ animation: slideOutRight 0.5s ease-in;}

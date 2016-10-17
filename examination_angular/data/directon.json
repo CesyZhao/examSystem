@@ -1,0 +1,17 @@
+[{
+"id":"1",
+"name":"webUI",
+"relname":"web前端"
+},{
+"id":"2",
+"name":"IOS",
+"relname":"苹果"	
+},{
+"id":"3",
+"name":"Android",
+"relname":"安卓"	
+},{
+"id":"4",
+"name":"Java",
+"relname":"JavaEE"
+}]

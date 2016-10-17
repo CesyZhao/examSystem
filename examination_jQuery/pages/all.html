@@ -1,0 +1,45 @@
+
+<script type="text/javascript">
+	$(function(){
+		getData("data/allSbj.json");
+		chose();
+		filterHandler();
+		showAnswer();
+		})
+</script>
+<div class="top">
+	<div class="top_search">
+    	<div class="ser_search">
+        	<select name="kind" id="">
+            	<option value="null">请选择</option>
+            </select>
+            <input type="text" placeholder="请输入查询内容"/>
+            <a href="#" class="btns search">查询</a>
+        </div>	
+        <div class="options">
+        	<a href="javascript:void(0)" class="btns ser addOne" url="pages/Add.html">单个添加题目<i class="icon_ser r"></i></a>
+            <a href="#" class="btns ser addMany">批量导入题目<i class="icon_ser r"></i></a>
+        </div>
+    </div>
+    <div class="filter_ops">
+    	<table>
+        	<tbody>
+            
+            </tbody>
+        </table>
+    </div>
+    <div class="num_show">
+    	<span class="num">共计<em></em>道题</span>
+        <span class="show" title="点击显示答案和解析">
+        	<input type="checkbox" /><a href="#">显示答案和解析</a>
+        </span>
+    </div>
+</div>
+<div class="ct_box">
+    <div class="content">
+        
+    </div>
+</div>
+<div class="addBox">
+	<a href="#">关闭</a>
+</div>
